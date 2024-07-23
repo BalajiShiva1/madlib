@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Lib</title>
+</head>
+<body>
+    <h1>Create Your Mad Lib</h1>
+    <form action="/ITC505/lab-7/submit" method="POST">
+        <label for="adjective">Adjective:</label>
+        <input type="text" id="adjective" name="adjective" required><br><br>
+        <label for="noun">Noun:</label>
+        <input type="text" id="noun" name="noun" required><br><br>
+        <label for="verb">Verb (past tense):</label>
+        <input type="text" id="verb" name="verb" required><br><br>
+        <label for="adverb">Adverb:</label>
+        <input type="text" id="adverb" name="adverb" required><br><br>
+        <label for="pluralNoun">Plural noun:</label>
+        <input type="text" id="pluralNoun" name="pluralNoun" required><br><br>
+        <button type="submit">Create Mad Lib</button>
+    </form>
+    <p>Addendum:</p>
+        <li>
+          Initially, I designed the HTML structure and applied styling using CSS. The JavaScript functionality handles the form submission, generates a story based on user inputs, and toggles between form and story views.
+        </li>
+        <li>
+          After testing locally, I ensured everything worked as expected, including form validation and story generation.
+        </li>
+        <li>
+          I then set up the Node.js environment, installed necessary npm packages, and created a simple server to handle form submissions and serve the HTML file.
+        </li>
+        <li>
+          In the server.js file, a POST route is created to process form data and generate the Mad Lib story.
+        </li>
+        <li>
+          Finally, running "node server.js" and accessing "http://localhost:8080/ITC505/lab-7" produces the expected results.
+        </li>
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>

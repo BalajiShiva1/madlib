@@ -1,0 +1,87 @@
+/* General styling for the body and headings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #5a5a5a;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for the form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the addendum section  */
+p {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} 
+
+
+
+li {
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#lastModified {
+    font-weight: bold;
+}
